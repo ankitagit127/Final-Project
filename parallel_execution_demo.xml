@@ -2,12 +2,12 @@
 <suite name="ParallelExecution" parallel="tests">
     <test name="Test">
         <classes>
-            <class name="testClasses.EaseMyTrip_Chrome"></class>
+            <class name="testClasses.EaseMyTrip_Chrome"/>
         </classes>
     </test>
     <test name="Test 2">
         <classes>
-            <class name="testClasses.EaseMyTrip_Firefox"></class>
+            <class name="testClasses.EaseMyTrip_Firefox"/>
         </classes>
     </test>
 </suite>
