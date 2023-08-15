@@ -66,7 +66,7 @@ public class FinalProject {
         adminpage.selectUserRole(userRole);
         adminpage.enterEmployee(Employee_name);
         adminpage.selectStatus(status);
-        adminpage.enterUsername(username);
+        adminpage.enterUsername(username + generateRandomString(5);
         adminpage.enterPassword(password);
         adminpage.enterConfirmPassword(confirmpassword);
         orangeHRMLogin.attachScreenshot("Add user details page");
@@ -154,6 +154,14 @@ public class FinalProject {
     public void logoutApplication(){
        orangeHRMLogin.clickUserdropdown();
        orangeHRMLogin.clickLogout();
+
+    }
+
+       private static String generateRandomString(int size) {
+        int length = size;
+        boolean useLetters = true;
+        boolean useNumbers = true;
+        return RandomStringUtils.random(length, useLetters, useNumbers);
 
     }
 
